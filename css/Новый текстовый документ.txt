@@ -1,0 +1,6 @@
+ <div class="col-md-1 col-lg-1">
+                    <i class="fa fa-chevron-left fa-3x d-none d-md-block"></i>
+                </div>
+<div class="col-md-1 col-lg-1 col-xl-2">
+                      <span class="prevArrow><i class="fa fa-chevron-right fa-3x pull-right d-none d-md-block"></i></span>
+                    </div>
