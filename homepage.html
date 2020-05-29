@@ -23,7 +23,7 @@
      <meta property="og:site_name" content="Название">
  </head>
  <body>
-    <header id="header">
+    <header id="header"
         <div class="header">
             <div class="container"> 
                 <div class="row">
@@ -320,12 +320,18 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
-                    <form class="consualtation" action="#" method="POST">
-                        <input class="consultation__input" type="text" name="text" placeholder="Имя" required>
+                    <form class="consualtation" id="ajax_form" method="POST" >
+                        <input class="consultation__input" type="text" name="name" placeholder="Имя" required>
                         <input class="consultation__input" type="email" name="email" placeholder="E-mail" required>
-                        <input class="consultation__input" type="tel" name="tel" placeholder="Телефон" required>
-                        <button class="consultation__button" type="submit">Заказать консультацию</button>
-                    </form>    
+                        <input class="consultation__input" type="tel" name="phonenumber" placeholder="Телефон" required>
+                        <button id="btn" class="consultation__button" type="button" >Заказать консультацию</button>
+                    </form>
+                    <div style="display: none;">
+                        <div class="box-modal" id="exampleModal1">
+                            <div class="box-modal_close arcticmodal-close">закрыть</div>
+                            <div id="result_form"></div> 
+                        </div>
+                    </div>  
                 </div>
             </div>
         </div>
